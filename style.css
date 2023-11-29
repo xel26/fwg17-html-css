@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    outline: none;
+    text-decoration: none;
+    transition: .5s;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.leftPage{
+ width: 20%;
+ background-image: url(assets/bg-register.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.rightPage{
+    flex: 1;
+}
+.rightPage .content{
+    width: 85%;
+    height: 95%;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+.content .logo{
+    margin-bottom: 2rem;
+}
+
+.content .logo .logo-items{
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.2rem;
+}
+
+.logo .logo-items img{
+    height: 1.2rem;
+}
+
+.content .form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.form h1{
+    color: #8E6447;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form p{
+    color: #4F5665;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.form label{
+    color: #0B132A;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.form input::placeholder{
+    color: #4F5665;
+    font-size: 0.6rem;
+    transform: translateY(-0.1rem);
+}
+
+.form .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    position: relative;
+}
+
+.form .input-group .input{
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.input img{
+    height: 1rem;
+}
+
+.input input{
+    width: 100%;
+    border: none;
+}
+
+button{
+    border: none;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+button p{
+    color: #4F5665;
+    font-weight: 600;
+}
+
+#register-login-submit{
+    background-color: #FF8906;
+    color: black;
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+}
+
+.login p{
+    color: #4F5665;
+    font-size: 0.8rem;
+}
+
+.login a{
+    color: #FF8906;
+    font-size: 0.8rem;
+}
+
+.or{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.or hr{
+    border: 0.5px solid #DEDEDE;
+    height: 0;
+}
+
+.or p{
+    text-align: center;
+    color: #AAAAAA;
+    font-size: 0.7rem;
+    transform: translateY(-0.5rem);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.buttons button{
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#facebook{
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, .1);
+}
+
+#google{
+    box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, .1);
+}
+
+#facebook:hover,
+#google:hover{
+    box-shadow: none;
+}
+
+
+/* login page*/
+.leftPage.login{
+    background-image: url(assets/bg-login.jpg);
+}
+
+.rightPage.login,
+.rightPage.forgot-password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightPage.login .content.login{
+    height: 77%;
+    margin-left: 0;
+}
+
+#lupa-password{
+    display: flex;
+    justify-content: end;
+    color:  #FF8906;
+}
+
+
+/* forgot password page */
+.leftPage.forgot-password{
+    background-image: url(assets/bg-forgot-password.jpg);
+}
+
+.rightPage.forgot-password .content.forgot-password{
+    height: 40%;
+    margin-left: 0;
+}
+
+.content.forgot-password .form{
+    gap: 1rem;
+}
+
+
+
+
+@media (max-width: 1081px) {
+    .leftPage{
+        width: 25%;
+    }
+}
+
+@media (max-width: 901px) {
+    .leftPage{
+        width: 30%;
+    }
+}
+
+@media (max-width: 769px) {
+    .leftPage{
+        width: 35%;
+    }
+}
+
+@media (max-width: 601px) {
+    .leftPage{
+        width: 40%;
+    }
+    .rightPage .content{
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 426px) {
+    .leftPage{
+        display: none;
+    }
+    .rightPage{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightPage .content{
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
