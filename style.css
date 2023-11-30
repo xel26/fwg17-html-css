@@ -12,12 +12,12 @@
 
 body{
     display: flex;
-    min-height: 100vh;
+    height: 64rem;
     width: 100%;
 }
 
 .leftPage{
- width: 20%;
+ width: 35%;
  background-image: url(assets/bg-register.jpg);
  background-size: cover;
  background-position: center;
@@ -26,14 +26,14 @@ body{
 .rightPage{
     flex: 1;
 }
+
 .rightPage .content{
-    width: 85%;
-    height: 95%;
-    margin-top: 2.5%;
-    margin-left: 5%;
+    width: 80%;
+    height: 85%;
+    margin-top: 8%;
+    margin-left: 8%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
 }
 
 .content .logo{
@@ -50,48 +50,52 @@ body{
     height: 1.2rem;
 }
 
+#nav-logo-text{
+    transform: translateY(3px);
+}
+
 .content .form{
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
+    gap: 2rem;
 }
 
 .form h1{
     color: #8E6447;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .form p{
     color: #4F5665;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .form label{
     color: #0B132A;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .form input::placeholder{
     color: #4F5665;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     transform: translateY(-0.1rem);
 }
 
 .form .input-group{
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.5rem;
     position: relative;
 }
 
 .form .input-group .input{
     border: 1px solid #DEDEDE;
-    border-radius: 5px;
-    padding: 0.5rem;
+    border-radius: 8px;
+    padding: 0.8rem;
     display: flex;
     gap: 0.7rem;
 }
@@ -116,16 +120,14 @@ button{
     font-weight: 500;
 }
 
-button p{
-    color: #4F5665;
-    font-weight: 600;
-}
 
 #register-login-submit{
     background-color: #FF8906;
-    color: black;
-    border-radius: 3px;
-    padding: 0.5rem;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    color:#0B132A;
+    font-weight: 500;
 }
 
 .login{
@@ -158,7 +160,7 @@ button p{
 .or p{
     text-align: center;
     color: #AAAAAA;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     transform: translateY(-0.5rem);
 }
 
@@ -171,7 +173,13 @@ button p{
 .buttons button{
     width: 50%;
     padding: 0.5rem;
-    border-radius: 10px;
+    border-radius: 4px;
+}
+
+
+button p{
+    color: #4F5665;
+    font-weight: 600;
 }
 
 #facebook{
@@ -223,27 +231,37 @@ button p{
 }
 
 .content.forgot-password .form{
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 
 
-
-@media (max-width: 1081px) {
-    .leftPage{
-        width: 25%;
-    }
-}
-
-@media (max-width: 901px) {
-    .leftPage{
-        width: 30%;
-    }
-}
 
 @media (max-width: 769px) {
-    .leftPage{
-        width: 35%;
+    body{
+        height: 50rem;
+    }
+
+    .content .form{
+        gap: 1.5rem;
+    }
+
+    .form label,
+    .form p{
+        font-size: 0.8rem;
+    }
+
+    .form h1{
+        font-size: 1rem;
+    }
+
+    .form .input-group .input{
+        padding: 0.6rem;
+    }
+
+    .form input::placeholder{
+        font-size: 0.65rem;
     }
 }
 
@@ -251,23 +269,38 @@ button p{
     .leftPage{
         width: 40%;
     }
+
+    .rightPage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .rightPage .content{
-        margin-left: 1rem;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+        
+    .form .input-group .input{
+        padding: 0.4rem;
+        border-radius: 5px;
+    }
+
+    #register-login-submit{
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 501px) {
+    .leftPage{
+        width: 45%;
     }
 }
 
 @media (max-width: 426px) {
     .leftPage{
         display: none;
-    }
-    .rightPage{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .rightPage .content{
-        margin-top: 0;
-        margin-left: 0;
     }
 }
