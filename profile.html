@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="profile">
+    <!-- nav start -->
+    <nav class="dark">
+      <div class="left-nav">
+        <div class="logo">
+          <img src="./assets/cup-coffee-icon-white.png" />
+          <img src="./assets/text-logo-white.png" />
+        </div>
+        <div class="navigation">
+          <a href="home" class="active">Home</a>
+          <a href="product">Product</a>
+        </div>
+      </div>
+
+      <div class="right-nav">
+        <div class="action">
+          <img src="./assets/search-icon.png" />
+          <img src="./assets/shopping-cart-icon.png" />
+        </div>
+        <div class="authentication">
+          <a href="./login.html" id="sign-in">Sign In</a>
+          <a href="./register.html" id="sign-up">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+
+    <!-- profile start -->
+    <div class="container">
+      <h1>Profile</h1>
+
+      <div class="wrap">
+        <div class="left">
+          <h2>Ghaluh Wizard</h2>
+          <p>ghaluhwizz@gmail.com</p>
+          <div id="photo"></div>
+          <button>Upload New Photo</button>
+          <p>Since <span>20 January 2022</span></p>
+        </div>
+
+        <div class="right">
+          <form>
+            <div class="input-group">
+              <label for="full-name">Full Name</label>
+              <div class="input">
+                <img src="/assets/fullname.png" />
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Enter Your Full Name"
+                  value="Ghaluh Wizard"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <div class="input">
+                <img src="/assets/mail.png"/>
+                <input
+                id="email"
+                type="email"
+                placeholder="Enter Your Email"
+                value="ghaluhwizz@gmail.com"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="phone">Phone</label>
+              <div class="input">
+                <img src="/assets/phone.png" />
+                <input
+                  id="phone"
+                  type="text"
+                  placeholder="Enter Your Phone Number"
+                  value="082116304338"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+                <div class="lable-password">
+                    <label for="password">Password</label>
+                    <p>Set New Password</p>
+                </div>
+              <div class="input">
+                <img src="/assets/password.png" />
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter Your Password"
+                  value="1234567890"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="address">Address</label>
+              <div class="input">
+                <img src="/assets/address-orderDetail.png" />
+                <input
+                  id="address"
+                  type="text"
+                  placeholder="Enter Your Adress"
+                  value="Griya Bandung Indah"
+                />
+              </div>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- profile end -->
+
+
+    <!-- footer start -->
+    <footer>
+      <div class="description">
+        <div class="logo">
+          <img src="./assets/cup-coffe-icon.png" />
+          <img src="./assets/text-logo.png" />
+        </div>
+        <p>
+          Coffee Shop is a store that sells some good meals, and especially
+          coffee. We provide high quality beans
+        </p>
+        <p id="copyright">&copy;2020CoffeeStore</p>
+      </div>
+
+      <div class="product-link">
+        <p>Product</p>
+        <a href="#">Our Product</a>
+        <a href="#">Pricing</a>
+        <a href="#">Location</a>
+        <a href="#">Countries</a>
+        <a href="#">Blog</a>
+      </div>
+
+      <div class="engage">
+        <p>Engage</p>
+        <a href="#">Partner</a>
+        <a href="#">FAQ</a>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+
+      <div class="social-media">
+        <p>Social Media</p>
+        <div class="link-social-media">
+          <a href="#"><img src="/assets/facebook-logo-circle.png" /></a>
+          <a href="#"><img src="/assets/twitter-logo-circle.png" /></a>
+          <a href="#"><img src="/assets/instagram-logo-circle.png" /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>
