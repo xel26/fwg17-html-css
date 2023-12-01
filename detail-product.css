@@ -173,7 +173,7 @@ nav a{
     flex-direction: column;
 }
 
-.product-detail #tag{
+#tag{
     color: #fff;
     font-size: 1.1rem;
     font-weight: 700;
@@ -473,7 +473,7 @@ footer{
     gap: 6rem;
     color: #4F5665;
     background-color: #F8F8F8;
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding-left: 5.5rem;
     width: 100%;
 }
