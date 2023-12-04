@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout Page</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media screen and (max-width: 426px) {
+        .checkout .container{
+          padding-top: 20%;
+        }
+        .checkout .wrap{
+          flex-direction: column;
+        }
+        .checkout .wrap-order-list{
+          width: 100%;
+        }
+        .checkout #delete-order-item{
+          top: 1rem;
+          right: 1rem;
+          width: 1.3rem;
+          height: 1.3rem;
+        }
+        .checkout .payment-info-delivery form{
+          width: 100%;
+        }
+        .checkout .input-options .options p{
+          padding: 10px 25px;
+          font-size: 0.8rem;
+        }
+      }
+    </style>
   </head>
   <body class="checkout">
     <!-- nav start -->
@@ -49,6 +75,25 @@
               </div>
 
               <div class="order-item">
+                <div class="group-order-item">
+                  <img src="./assets/checkout-image.jpg" />
+                  <div class="breakdown">
+                    <h6 id="tag">FLASH SALE!</h6>
+                    <h4>Hazelnut Latte</h4>
+                    <div class="particulars">
+                      <p>2pcs</p>
+                      <p>Regular</p>
+                      <p>Ice</p>
+                      <p>Dine in</p>
+                    </div>
+                    <div class="price">
+                      <h1 id="base-price">IDR 40.000</h1>
+                      <h1 id="discount-price">IDR 20.000</h1>
+                    </div>
+                    <h3 id="delete-order-item">×</h3>
+                  </div>
+                </div>
+
                 <div class="group-order-item">
                   <img src="./assets/checkout-image.jpg" />
                   <div class="breakdown">

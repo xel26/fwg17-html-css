@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>History Order</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width: 426px){
+            .history-order .container{
+                margin-top: 20%;
+            }
+            .history-order .header{
+                justify-content: space-between;
+            }
+            .history-order .header h1 {
+                font-size: 2rem;
+            }
+            .history-order .header p {
+                width: 2rem;
+                height: 2rem;
+                font-size: 0.8rem;
+            }
+
+            .history-order .wrap{
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .history-order .wrap .left{
+                width: 100%;
+            }
+            .history-order .filter{
+                flex-direction: column-reverse;
+                gap: 1rem;
+            }
+            .history-order .filter-by-date{
+                width: 50%;
+                padding: 5px;
+            }
+            .history-order .filter-by-status{
+                width: 100%;
+                padding: 0.5rem;
+            }
+            .history-order .filter-by-status h4,
+            .history-order .filter-by-date h4{
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            .history-order .record img{
+                display: none;
+            }
+            .history-order .record{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-left: 3rem;
+                gap: 1rem;
+            }
+            .history-order .record a,
+            .history-order .record h5{
+                width: fit-content;
+                margin-top: 0;
+            }
+            .history-order .component{
+                gap: 0.2rem;
+            }
+            .history-order .component.status h5{
+                transform: none;
+            }
+        }
+    </style>
   </head>
   <body class="history-order">
     <!-- nav start -->

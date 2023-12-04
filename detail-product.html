@@ -5,6 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Product</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media screen and (max-width: 426px) {
+        .page-detail-product .container {
+          gap: 2.5rem;
+        }
+        .page-detail-product .product {
+          flex-direction: column;
+          margin-top: 2rem;
+        }
+        .page-detail-product .product-img {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .page-detail-product .product-img > img {
+          width: 21.1rem;
+        }
+        .page-detail-product .product-img > div img {
+          width: 6.37rem;
+        }
+
+
+        .page-detail-product #tag {
+          font-size: 0.8rem;
+          padding: 5px;
+        }
+        .page-detail-product .product-detail {
+          width: 100%;
+          gap: 0.5rem;
+          padding-inline: 1rem;
+        }
+        .page-detail-product .product-name {
+          font-size: 1.5rem;
+        }
+        .page-detail-product #discount-price {
+          font-size: 1rem;
+        }
+        .page-detail-product .review-count{
+          font-size: 0.9rem;
+          gap: 0.5rem;
+        }
+        .page-detail-product #description-product{
+          font-size: 0.8rem;
+        }
+        .page-detail-product .order-quantity h1{
+          font-size: 1.2rem;
+        }
+        .page-detail-product .order-quantity #quantity{
+          font-size: 01rem;
+        }
+        .page-detail-product .order-quantity #min,
+        .page-detail-product .order-quantity #plus{
+          width: 1.5rem;
+          height: 1.5rem;
+          line-height: 20px;
+        }
+        .page-detail-product .product-size,
+        .page-detail-product .product-variant{
+          gap: 0.5rem;
+        }
+        .page-detail-product .product-size h4,
+        .page-detail-product .product-variant h4{
+          font-size: 0.9rem;
+        }
+        .page-detail-product .sizes p{
+          padding: 8px 20px;
+        }
+        .page-detail-product .variants p{
+          padding: 8px 55px;
+        }
+        .page-detail-product .buttons-order {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        .page-detail-product #buy{
+          width: 100%;
+        }
+
+
+        .page-detail-product .list-products{
+          align-items: center;
+        }
+        .page-detail-product .list-products h1 {
+          font-size: 1.5rem;
+        }
+        .page-detail-product .wrap > div:nth-child(3) {
+          display: none;
+        }
+        .page-detail-product .list-products .product-item .product-details{
+          padding-top: 0.5rem;
+          height: auto;
+          padding-inline: 0.5rem;
+        }
+        .page-detail-product .list-products .product-item #tag{
+          left: 2.5rem;
+        }
+        .page-detail-product .list-products .product-item .product-details .product-name {
+          font-size: 1rem;
+        }
+        .page-detail-product .list-products .product-item .product-details > p {
+          font-size: 0.5rem;
+        }
+        .page-detail-product .list-products .product-item .product-details .rating,
+        .page-detail-product .list-products .product-item .product-details .rating-stars {
+          gap: 0.2rem;
+        }
+        .page-detail-product .list-products .product-item .product-details .price{
+          gap: 0.5rem;
+        }
+        .page-detail-product .list-products .product-item .product-details #base-price{
+          font-size: 0.5rem;
+        }
+        .page-detail-product .list-products .product-item .product-details #discount-price{
+          font-size: 0.8rem;
+        }
+        .page-detail-product .list-products .product-item .product-details .order {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        .page-detail-product .list-products .product-item .product-details .order img {
+          padding: 3px 55px;
+        }
+        .page-detail-product .list-products .product-item .product-details .order button {
+          padding: 3px;
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body class="page-detail-product">
     <!-- nav start -->
@@ -24,6 +153,7 @@
         <div class="action">
           <img src="./assets/search-icon.png" />
           <img src="./assets/shopping-cart-icon.png" />
+          <img src="./assets/nav-option.png" />
         </div>
         <div class="authentication">
           <a href="./login.html" id="sign-in">Sign In</a>

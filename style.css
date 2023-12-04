@@ -318,6 +318,9 @@ nav a {
   align-items: center;
   gap: 1rem;
 }
+.right-nav .action img:nth-child(3) {
+  display: none;
+}
 .right-nav #sign-in {
   border: 1px solid #fff;
   border-radius: 5px;
@@ -681,10 +684,6 @@ input {
 
 /* main page start*/
 /* landing page start */
-.main .right-nav .action img:nth-child(3) {
-  display: none;
-}
-
 .main .landing-page {
   display: flex;
   min-height: 64rem;
@@ -757,20 +756,20 @@ main .landing-page .left-page .content .data p {
   padding: 8px;
 }
 
-.main #chat-icon img{
+.main #chat-icon img {
   height: 2rem;
   width: 2rem;
 }
 
-.main .landing-page .left-page .content .responsive-chat-icon{
+.main .landing-page .left-page .content .responsive-chat-icon {
   display: flex;
   justify-content: space-between;
 }
 
 .main .landing-page .left-page #chat-icon {
-  display: none ;
+  display: none;
   width: fit-content;
-  padding: 4px
+  padding: 4px;
 }
 
 .main .landing-page .right-page #chat-icon {
@@ -1227,16 +1226,6 @@ body.page-detail-product {
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
-}
-
-#tag {
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  background-color: #d00000;
-  border-radius: 24px;
-  padding: 10px;
-  width: fit-content;
 }
 
 .page-detail-product .product-name {
@@ -1874,3 +1863,75 @@ body.profile {
   cursor: context-menu;
 }
 /* profile end */
+
+@media screen and (max-width: 426px) {
+  nav {
+    padding-inline: 2rem;
+    height: 3rem;
+  }
+  .right-nav .action img:nth-child(3) {
+    display: block;
+  }
+
+  .left-nav .navigation,
+  .right-nav .action img:nth-child(1),
+  .right-nav .authentication {
+    display: none;
+  }
+
+  /* --- */
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding-left: 0;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+
+  footer .description,
+  footer .product-link,
+  footer .engage,
+  footer .social-media {
+    gap: 1rem;
+    width: 90%;
+  }
+
+  footer .social-media {
+    transform: none;
+    gap: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  /* --- */
+  .order-item .group-order-item {
+    align-items: center;
+  }
+  .order-item .group-order-item img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .order-item .group-order-item .breakdown {
+    gap: 0.5rem;
+  }
+
+  .order-item .group-order-item .particulars {
+    font-size: 0.9rem;
+  }
+
+  .order-item .group-order-item #base-price {
+    font-size: 0.6rem;
+  }
+
+  .order-item .group-order-item #discount-price {
+    font-size: 0.8rem;
+  }
+
+  /* --- */
+
+  .page-chooser h3,
+  .page-chooser div {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+}

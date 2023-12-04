@@ -5,6 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media screen  and (max-width: 426px){
+        .profile .container{
+          margin-top: 20%;
+        }
+        .profile .container > h1{
+          font-size: 2rem;
+        }
+        .profile .wrap{
+          flex-direction: column;
+        }
+        .profile .left{
+          width: 100%;
+        }
+        .profile .left button{
+          width: 60%;
+          font-size: 0.8rem;
+        }
+        .profile .right{
+          padding: 1rem;
+        }
+        .profile .right label{
+          font-size: 0.8rem;
+        }
+        .profile .right .lable-password p{
+          font-size: 0.7rem;
+        }
+        .profile .right .input{
+          padding: 0.6rem;
+        }
+        .profile .right .input input{
+          font-size: 0.75rem;
+        }
+        .profile .wrap button{
+          padding: 7px;
+        }
+      }
+    </style>
   </head>
   <body class="profile">
     <!-- nav start -->
@@ -42,7 +80,7 @@
         <div class="left">
           <h2>Ghaluh Wizard</h2>
           <p>ghaluhwizz@gmail.com</p>
-          <div id="photo"></div>
+          <img src="https://images.pexels.com/photos/1142948/pexels-photo-1142948.jpeg?auto=compress&cs=tinysrgb&w=600" id="photo"></img>
           <button>Upload New Photo</button>
           <p>Since <span>20 January 2022</span></p>
         </div>

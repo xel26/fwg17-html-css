@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Order Page</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media screen and (max-width: 426px) {
+        .detail-order .container{
+          margin-top: 20%;
+        }
+        .detail-order .wrap{
+          flex-direction: column;
+        }
+
+        .detail-order .header h1{
+          font-size: 1.5rem;
+        }
+
+        .detail-order .left{
+          width: 100%;
+        }
+        .detail-order .left h1{
+          font-size: 1rem;
+        }
+        .detail-order .record{
+          padding: 15px 10px;
+        }
+        .detail-order .record .lable p,
+        .detail-order .record p{
+          font-size: 0.8rem;
+        }
+        .detail-order .record h5{
+          font-size: 0.7rem;
+        }
+      }
+    </style>
   </head>
   <body class="detail-order">
     <!-- nav start -->
@@ -105,6 +136,24 @@
             <h4>Your Order</h4>
 
             <div class="order-item">
+              <div class="group-order-item">
+                <img src="./assets/checkout-image.jpg" />
+                <div class="breakdown">
+                  <h6 id="tag">FLASH SALE!</h6>
+                  <h4>Hazelnut Latte</h4>
+                  <div class="particulars">
+                    <p>2pcs</p>
+                    <p>Regular</p>
+                    <p>Ice</p>
+                    <p>Dine in</p>
+                  </div>
+                  <div class="price">
+                    <h1 id="base-price">IDR 40.000</h1>
+                    <h1 id="discount-price">IDR 20.000</h1>
+                  </div>
+                </div>
+              </div>
+
               <div class="group-order-item">
                 <img src="./assets/checkout-image.jpg" />
                 <div class="breakdown">
