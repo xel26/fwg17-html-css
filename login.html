@@ -1,81 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        @media (max-width: 426px) {
-            body{
-                height: 40rem;
-            }
-
-            .rightPage.login .content.login .form{
-                gap: 1rem;
-            }
+      @media screen and (max-width: 426px) {
+        .leftPage {
+          display: none;
         }
+
+        .rightPage.login {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .rightPage .content{
+          margin-top: 0rem;
+        }
+
+        .login-page .content .logo{
+            margin-bottom: 1rem;
+        }
+
+        .login-page .form label{
+            font-size: 0.9rem;
+        }
+
+        .login-page .form .input-group .input{
+            padding: 0.6rem;
+        }
+
+        .login-page .or{
+            margin-bottom: 0;
+            margin-top: 0.5rem;
+        }
+
+        #lupa-password{
+            font-size: 0.8rem;
+        }
+
+        .login-page #register-login-submit{
+            padding: 8px;
+        }
+
+        .login-page .buttons{
+          justify-content: center;
+          gap: 2.5rem;
+        }
+
+        .login-page .buttons p{
+          display: none;
+        }
+
+        .login-page .buttons button{
+          width: 3rem;
+          height: 3rem;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body class="auth login-page">
     <div class="leftPage login"></div>
     <div class="rightPage login">
-        <div class="content login">
-            <div class="logo">
-                <div class="logo-items">
-                    <img src="./assets/cup-coffe-icon.png">
-                    <img src="/assets/text-logo.png" alt="">
-                </div>
-            </div>
-            <div class="form">
-                <h1>Login</h1>
-                <p>Fill out the form correctly</p>
-
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <div class="input">
-                        <img src="/assets/mail.png">
-                        <input id="email" type="text" placeholder="Enter Your Email">
-                    </div>
-                </div>
-                
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <div class="input">
-                        <img src="/assets/password.png">
-                        <input id="password" type="text" placeholder="Enter Your Password">
-                    </div>
-                </div>
-
-
-                <a href="./fortgot-password.html" id="lupa-password">Lupa Password?</a>
-
-                <button id="register-login-submit">Login</button>
-
-                <div class="login">
-                    <p>Not Have An Account?</p>
-                    <a href="./register.html">Register</a>
-                </div>
-
-                <div class="or">
-                    <hr>
-                    <p>Or</p>
-                    <hr>
-                </div>
-
-                <div class="buttons">
-                    <button id="facebook">
-                        <img src="/assets/facebook-logo.png" alt="">
-                        <p>Facebook</p>
-                    </button>
-                    <button id="google">
-                        <img src="/assets/google-logo.png" alt="">
-                        <p>Google</p>
-                    </button>
-                </div>
-
-            </div>
+      <div class="content login">
+        <div class="logo">
+          <div class="logo-items">
+            <img src="./assets/cup-coffe-icon.png" />
+            <img src="/assets/text-logo.png" alt="" />
+          </div>
         </div>
+        <div class="form">
+          <h1>Login</h1>
+          <p>Fill out the form correctly</p>
+
+          <form>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <div class="input">
+                <img src="/assets/mail.png" />
+                <input id="email" type="email" placeholder="Enter Your Email" />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <div class="input">
+                <img src="/assets/password.png" />
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter Your Password"
+                />
+              </div>
+            </div>
+
+            <a href="./fortgot-password.html" id="lupa-password"
+              >Lupa Password?</a
+            >
+
+            <button type="submit" id="register-login-submit">Login</button>
+          </form>
+
+          <div class="login-register">
+            <p>Not Have An Account?</p>
+            <a href="./register.html">Register</a>
+          </div>
+
+          <div class="or">
+            <hr />
+            <p>Or</p>
+            <hr />
+          </div>
+
+          <div class="buttons">
+            <button id="facebook">
+              <div>
+                <img src="/assets/facebook-logo.png" />
+              </div>
+              <p>Facebook</p>
+            </button>
+            <button id="google">
+              <div>
+                <img src="/assets/google-logo.png" />
+              </div>
+              <p>Google</p>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
