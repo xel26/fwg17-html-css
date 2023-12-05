@@ -944,7 +944,7 @@ main .landing-page .left-page .content .data p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   gap: 2rem;
   white-space: nowrap;
   height: fit-content;
@@ -1006,7 +1006,7 @@ main .landing-page .left-page .content .data p {
   background-color: #FF8906;
 }
 
-.product-page .button-swipe img:nth-child(1){
+.product-page .button-swipe #arrow-prev{
   background-color:#E8E8E8;
 }
 
@@ -1014,8 +1014,19 @@ main .landing-page .left-page .content .data p {
   width: 90%;
 }
 
+.product-page .main-content h1{
+  font-size: 2.2rem;
+}
+
+/* for responsive  start*/
+.product-page .find-product{
+  display: none;
+}
+/* for responsive end */
+
 .product-page .main-content .showcase{
   display: flex;
+  margin-top: 1rem;
 }
 
 .product-page .main-content aside{
@@ -1095,7 +1106,7 @@ main .landing-page .left-page .content .data p {
 
 .product-page .list-products .product-image{
   position: relative;
-  background-color: #00a700;
+  /* background-color: #00a700; */
   height: fit-content;
 }
 
@@ -2135,11 +2146,52 @@ body.profile {
   }
 
   /* --- */
-
   .page-chooser h3,
   .page-chooser div {
     width: 2rem;
     height: 2rem;
     font-size: 0.8rem;
+  }
+
+  /* --- */
+  .product-item .product-details{
+    padding-top: 0.5rem;
+    height: auto;
+    padding-inline: 0.5rem;
+  }
+  .product-item #tag{
+    left: 2.5rem;
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  .product-item .product-details .product-name {
+    font-size: 1rem;
+  }
+  .product-item .product-details > p {
+    font-size: 0.5rem;
+  }
+  .product-item .product-details .rating,
+  .product-item .product-details .rating-stars {
+    gap: 0.2rem;
+  }
+  .product-item .product-details .price{
+    gap: 0.5rem;
+  }
+  .product-item .product-details #base-price{
+    font-size: 0.5rem;
+  }
+  .product-item .product-details #discount-price{
+    font-size: 0.8rem;
+  }
+  .product-item .product-details .order {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .product-item .product-details .order img {
+    padding: 3px 55px;
+  }
+  .product-item .product-details .order button {
+    padding: 3px;
+    width: 100%;
   }
 }

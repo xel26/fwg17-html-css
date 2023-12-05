@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media screen and (max-width: 426px) {
+        .product-page .container{
+          padding-top: 15%;
+        }
+
+        .product-page .find-product {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+        .product-page #filter-search {
+          background-color: #ff8906;
+          padding: 0.4rem;
+          border-radius: 4px;
+          line-height: 10px;
+        }
+        .product-page .input-group .input {
+          padding: 0.5rem;
+        }
+
+        .product-page header,
+        .product-page .today-promo .button-swipe{
+          display: none;
+        }
+        .product-page .main-content aside{
+          display: none;
+        }
+        .product-page .wrap{
+          width: 100%;
+        }
+        .product-page .product-item .product-details{
+          top: 8rem;
+          width: 90%;
+        }
+        .product-page .list-products{
+          grid-column-gap: 1rem;
+          grid-row-gap: 13rem;
+        }
+      }
+    </style>
   </head>
   <body class="product-page">
     <!-- nav start -->
@@ -46,12 +88,12 @@
       <section class="today-promo">
         <h1>Today <span>Promo</span></h1>
         <div class="button-swipe">
-            <div>
-                <img src="/assets/arrow-prev.png" id="arrow-prev" />
-            </div>
-            <div>
-                <img src="/assets/arrow-next.png" id="arrow-next" />
-            </div>
+          <div>
+            <img src="/assets/arrow-prev.png" id="arrow-prev" />
+          </div>
+          <div>
+            <img src="/assets/arrow-next.png" id="arrow-next" />
+          </div>
         </div>
       </section>
 
@@ -128,6 +170,21 @@
 
       <section class="main-content">
         <h1>Our <span>Product</span></h1>
+
+        <div class="find-product">
+          <div class="input-group">
+            <div class="input">
+              <div>
+                <img src="/assets/search-icon-grey.png" />
+              </div>
+              <input type="text" placeholder="Find Product" />
+            </div>
+          </div>
+          <div id="filter-search">
+            <img src="./assets/filter-search.png" alt="" />
+          </div>
+        </div>
+
         <div class="showcase">
           <aside>
             <form>
@@ -251,219 +308,228 @@
           </aside>
           <section class="wrap">
             <div class="list-products">
-                <div class="product-item">
-                  <div class="product-image">
-                    <img src="./assets/recommend-product1.jpg" />
-                  </div>
-                  <h1 id="tag">FLASH SALE!</h1>
-                  <div class="product-details">
-                    <h1 class="product-name">Hazelnut Latte</h1>
-                    <p>
-                      You can explore the menu that we provide with fun and have
-                      their own taste and make your day better.
-                    </p>
-                    <div class="rating">
-                      <div class="rating-stars">
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                      </div>
-                      <p id="rating-number">5.0</p>
-                    </div>
-                    <div class="price">
-                      <h1 id="base-price">IDR 20.000</h1>
-                      <h1 id="discount-price">IDR 10.000</h1>
-                    </div>
-                    <div class="order">
-                      <button>Buy</button>
-                      <div>
-                        <img src="./assets/shopping-cart-icon-orange.png" />
-                      </div>
-                    </div>
-                  </div>
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="./assets/recommend-product1.jpg" />
                 </div>
-    
-                <div class="product-item">
-                  <div class="product-image">
-                    <img src="./assets/recommend-product2.jpg" />
+                <h1 id="tag">FLASH SALE!</h1>
+                <div class="product-details">
+                  <h1 class="product-name">Hazelnut Latte</h1>
+                  <p>
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <div class="rating">
+                    <div class="rating-stars">
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                    </div>
+                    <p id="rating-number">5.0</p>
                   </div>
-                  <h1 id="tag">FLASH SALE!</h1>
-                  <div class="product-details">
-                    <h1 class="product-name">Hazelnut Latte</h1>
-                    <p>
-                      You can explore the menu that we provide with fun and have
-                      their own taste and make your day better.
-                    </p>
-                    <div class="rating">
-                      <div class="rating-stars">
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                      </div>
-                      <p id="rating-number">5.0</p>
-                    </div>
-                    <div class="price">
-                      <h1 id="base-price">IDR 20.000</h1>
-                      <h1 id="discount-price">IDR 10.000</h1>
-                    </div>
-                    <div class="order">
-                      <button>Buy</button>
-                      <div>
-                        <img src="./assets/shopping-cart-icon-orange.png" alt="" />
-                      </div>
+                  <div class="price">
+                    <h1 id="base-price">IDR 20.000</h1>
+                    <h1 id="discount-price">IDR 10.000</h1>
+                  </div>
+                  <div class="order">
+                    <button>Buy</button>
+                    <div>
+                      <img src="./assets/shopping-cart-icon-orange.png" />
                     </div>
                   </div>
-                </div>
-                
-                <div class="product-item">
-                  <div class="product-image">
-                    <img src="./assets/recommend-product1.jpg" />
-                  </div>
-                  <h1 id="tag">FLASH SALE!</h1>
-                  <div class="product-details">
-                    <h1 class="product-name">Hazelnut Latte</h1>
-                    <p>
-                      You can explore the menu that we provide with fun and have
-                      their own taste and make your day better.
-                    </p>
-                    <div class="rating">
-                      <div class="rating-stars">
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                      </div>
-                      <p id="rating-number">5.0</p>
-                    </div>
-                    <div class="price">
-                      <h1 id="base-price">IDR 20.000</h1>
-                      <h1 id="discount-price">IDR 10.000</h1>
-                    </div>
-                    <div class="order">
-                      <button>Buy</button>
-                      <div>
-                        <img src="./assets/shopping-cart-icon-orange.png" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="product-item">
-                  <div class="product-image">
-                    <img src="./assets/recommend-product2.jpg" />
-                  </div>
-                  <h1 id="tag">FLASH SALE!</h1>
-                  <div class="product-details">
-                    <h1 class="product-name">Hazelnut Latte</h1>
-                    <p>
-                      You can explore the menu that we provide with fun and have
-                      their own taste and make your day better.
-                    </p>
-                    <div class="rating">
-                      <div class="rating-stars">
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                      </div>
-                      <p id="rating-number">5.0</p>
-                    </div>
-                    <div class="price">
-                      <h1 id="base-price">IDR 20.000</h1>
-                      <h1 id="discount-price">IDR 10.000</h1>
-                    </div>
-                    <div class="order">
-                      <button>Buy</button>
-                      <div>
-                        <img src="./assets/shopping-cart-icon-orange.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="product-item">
-                  <div class="product-image">
-                    <img src="./assets/recommend-product1.jpg" />
-                  </div>
-                  <h1 id="tag">FLASH SALE!</h1>
-                  <div class="product-details">
-                    <h1 class="product-name">Hazelnut Latte</h1>
-                    <p>
-                      You can explore the menu that we provide with fun and have
-                      their own taste and make your day better.
-                    </p>
-                    <div class="rating">
-                      <div class="rating-stars">
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                      </div>
-                      <p id="rating-number">5.0</p>
-                    </div>
-                    <div class="price">
-                      <h1 id="base-price">IDR 20.000</h1>
-                      <h1 id="discount-price">IDR 10.000</h1>
-                    </div>
-                    <div class="order">
-                      <button>Buy</button>
-                      <div>
-                        <img src="./assets/shopping-cart-icon-orange.png" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="product-item">
-                  <div class="product-image">
-                    <img src="./assets/recommend-product2.jpg" />
-                  </div>
-                  <h1 id="tag">FLASH SALE!</h1>
-                  <div class="product-details">
-                    <h1 class="product-name">Hazelnut Latte</h1>
-                    <p>
-                      You can explore the menu that we provide with fun and have
-                      their own taste and make your day better.
-                    </p>
-                    <div class="rating">
-                      <div class="rating-stars">
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                        <img src="/assets/star.png" />
-                      </div>
-                      <p id="rating-number">5.0</p>
-                    </div>
-                    <div class="price">
-                      <h1 id="base-price">IDR 20.000</h1>
-                      <h1 id="discount-price">IDR 10.000</h1>
-                    </div>
-                    <div class="order">
-                      <button>Buy</button>
-                      <div>
-                        <img src="./assets/shopping-cart-icon-orange.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="page-chooser">
-                <h3 class="chosen">1</h3>
-                <h3>2</h3>
-                <h3>2</h3>
-                <h3>4</h3>
-                <div>
-                  <img src="/assets/arrow-right.png" />
                 </div>
               </div>
+
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="./assets/recommend-product2.jpg" />
+                </div>
+                <h1 id="tag">FLASH SALE!</h1>
+                <div class="product-details">
+                  <h1 class="product-name">Hazelnut Latte</h1>
+                  <p>
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <div class="rating">
+                    <div class="rating-stars">
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                    </div>
+                    <p id="rating-number">5.0</p>
+                  </div>
+                  <div class="price">
+                    <h1 id="base-price">IDR 20.000</h1>
+                    <h1 id="discount-price">IDR 10.000</h1>
+                  </div>
+                  <div class="order">
+                    <button>Buy</button>
+                    <div>
+                      <img
+                        src="./assets/shopping-cart-icon-orange.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="./assets/recommend-product1.jpg" />
+                </div>
+                <h1 id="tag">FLASH SALE!</h1>
+                <div class="product-details">
+                  <h1 class="product-name">Hazelnut Latte</h1>
+                  <p>
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <div class="rating">
+                    <div class="rating-stars">
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                    </div>
+                    <p id="rating-number">5.0</p>
+                  </div>
+                  <div class="price">
+                    <h1 id="base-price">IDR 20.000</h1>
+                    <h1 id="discount-price">IDR 10.000</h1>
+                  </div>
+                  <div class="order">
+                    <button>Buy</button>
+                    <div>
+                      <img src="./assets/shopping-cart-icon-orange.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="./assets/recommend-product2.jpg" />
+                </div>
+                <h1 id="tag">FLASH SALE!</h1>
+                <div class="product-details">
+                  <h1 class="product-name">Hazelnut Latte</h1>
+                  <p>
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <div class="rating">
+                    <div class="rating-stars">
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                    </div>
+                    <p id="rating-number">5.0</p>
+                  </div>
+                  <div class="price">
+                    <h1 id="base-price">IDR 20.000</h1>
+                    <h1 id="discount-price">IDR 10.000</h1>
+                  </div>
+                  <div class="order">
+                    <button>Buy</button>
+                    <div>
+                      <img
+                        src="./assets/shopping-cart-icon-orange.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="./assets/recommend-product1.jpg" />
+                </div>
+                <h1 id="tag">FLASH SALE!</h1>
+                <div class="product-details">
+                  <h1 class="product-name">Hazelnut Latte</h1>
+                  <p>
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <div class="rating">
+                    <div class="rating-stars">
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                    </div>
+                    <p id="rating-number">5.0</p>
+                  </div>
+                  <div class="price">
+                    <h1 id="base-price">IDR 20.000</h1>
+                    <h1 id="discount-price">IDR 10.000</h1>
+                  </div>
+                  <div class="order">
+                    <button>Buy</button>
+                    <div>
+                      <img src="./assets/shopping-cart-icon-orange.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <div class="product-image">
+                  <img src="./assets/recommend-product2.jpg" />
+                </div>
+                <h1 id="tag">FLASH SALE!</h1>
+                <div class="product-details">
+                  <h1 class="product-name">Hazelnut Latte</h1>
+                  <p>
+                    You can explore the menu that we provide with fun and have
+                    their own taste and make your day better.
+                  </p>
+                  <div class="rating">
+                    <div class="rating-stars">
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                      <img src="/assets/star.png" />
+                    </div>
+                    <p id="rating-number">5.0</p>
+                  </div>
+                  <div class="price">
+                    <h1 id="base-price">IDR 20.000</h1>
+                    <h1 id="discount-price">IDR 10.000</h1>
+                  </div>
+                  <div class="order">
+                    <button>Buy</button>
+                    <div>
+                      <img
+                        src="./assets/shopping-cart-icon-orange.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-chooser">
+              <h3 class="chosen">1</h3>
+              <h3>2</h3>
+              <h3>2</h3>
+              <h3>4</h3>
+              <div>
+                <img src="/assets/arrow-right.png" />
+              </div>
+            </div>
           </section>
         </div>
       </section>
