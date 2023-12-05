@@ -4,28 +4,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chatbox</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="chat-box">
-      <div class="header-chat">
-        <div id="admin-support-img"></div>
-        <div class="admin-support">
-          <h1>Maria Angela</h1>
-          <h1>Admin Support</h1>
+    <!-- nav start -->
+    <nav>
+      <div class="left-nav">
+        <div class="logo">
+          <img src="./assets/cup-coffee-icon-white.png" />
+          <img src="./assets/text-logo-white.png" />
+        </div>
+        <div class="navigation">
+          <a href="home" class="active">Home</a>
+          <a href="product">Product</a>
         </div>
       </div>
-      <div class="chats">
-        <div class="admin-message">
-          <img src="" />
-          <h1>Halo, Ada yang bisa kami bantu?</h1>
-        </div>
 
-        <div class="customer-message">
-          <h1>Saya kesulitan mencari kopi</h1>
-          <img src="" alt="" />
+      <div class="right-nav">
+        <div class="action">
+          <img src="./assets/search-icon.png" />
+          <img src="./assets/shopping-cart-icon.png" />
+          <img src="./assets/nav-option.png" />
+        </div>
+        <div class="authentication">
+          <a href="./login.html" id="sign-in">Sign In</a>
+          <a href="./register.html" id="sign-up">Sign Up</a>
         </div>
       </div>
-      <div class="input-chat"></div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- landing page start -->
+    <div class="landing-page">
+      <div class="left-page">
+        <div class="content">
+          <h1>Start Your Day with Coffee and Good Meals</h1>
+          <p>
+            We provide high quality beans, good taste, and healthy meals made by
+            love just for you. Start your day with us for a bigger smile!
+          </p>
+          <div class="responsive-chat-icon">
+            <button>Get Started</button>
+            <div id="chat-icon">
+              <img src="/assets/chat-icon.png" />
+            </div>
+            <div class="chat-box responsive-mobile">
+              <div class="header-chat">
+                <div id="admin-support-img">
+                  <img src="">
+                </div>
+                <div class="admin-support">
+                  <h1>Maria Angela</h1>
+                  <h1>Admin Support</h1>
+                </div>
+              </div>
+    
+              <div class="chats">
+                <div class="admin-message">
+                  <div class="admin-message-img">
+                    <img src="">
+                  </div>
+                  <p>Halo, Ada yang bisa kami bantu?</p>
+              </div>
+    
+                <div class="customer-message">
+                  <p>Saya kesulitan mencari kopi</p>
+                  <div class="customer-message-img">
+                    <img src="">
+                  </div>
+                </div>
+              
+              </div>
+    
+              <div class="input-chat">
+                <input type="text" placeholder="Masukan Pesan Anda">
+                <div id="send-chat-icon">
+                  <img src="./assets/send-chat-icon.png">
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="data">
+            <div class="group-data">
+              <h1>90+</h1>
+              <p>Staff</p>
+            </div>
+            <div class="group-data">
+              <h1>30+</h1>
+              <p>Stores</p>
+            </div>
+            <div class="group-data">
+              <h1>800+</h1>
+              <p>Customer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-page">
+        <div id="chat-icon">
+          <img src="/assets/chat-icon.png" />
+        </div>
+        <div class="chat-box">
+          <div class="header-chat">
+            <div id="admin-support-img">
+              <img src="">
+            </div>
+            <div class="admin-support">
+              <h1>Maria Angela</h1>
+              <h1>Admin Support</h1>
+            </div>
+          </div>
+
+          <div class="chats">
+            <div class="admin-message">
+              <div class="admin-message-img">
+                <img src="">
+              </div>
+              <p>Halo, Ada yang bisa kami bantu?</p>
+          </div>
+
+            <div class="customer-message">
+              <p>Saya kesulitan mencari kopi</p>
+              <div class="customer-message-img">
+                <img src="">
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="input-chat">
+            <input type="text" placeholder="Masukan Pesan Anda">
+            <div id="send-chat-icon">
+              <img src="./assets/send-chat-icon.png">
+            </div>
+          </div>
+      </div>
     </div>
+    <!-- landing page end -->
   </body>
 </html>
